@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-header">
+        <a href="inicio.html" class="nav-head">Voltar ao Início</a>
+    </header>
+    <section id="painel-medico">
+        <h2>Painel Médico</h2>
+        <form>
+            <input type="date" required>
+            <textarea placeholder="Observações do Médico"></textarea>
+            <select required>
+                <option value="" disabled selected>Status do Atleta</option>
+                <option value="apto">Apto</option>
+                <option value="inapto">Inapto</option>
+            </select>
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+</body>
+</html>
