@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - João Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="nav-header">
+        <a href="inicio.html" class="nav-head">Voltar ao Início</a>
+    </header>
+    <main>
+        <h1>Perfil - João Silva</h1>
+        <section id="informacoes-gerais">
+            <h2>Informações Gerais</h2>
+            <p><strong>Nome:</strong> João Silva</p>
+            <p><strong>Idade:</strong> 24</p>
+            <p><strong>Posição:</strong> Atacante</p>
+            <p><strong>Status:</strong> Ativo</p>
+        </section>
+
+        <section id="treino">
+            <h2>Treinos</h2>
+            <ul>
+                <li>Treino Cardio - 45 min - Intensidade: Alta</li>
+                <li>Treino Técnico - 30 min - Intensidade: Moderada</li>
+            </ul>
+        </section>
+
+        <section id="painel-medico">
+            <h2>Painel Médico</h2>
+            <p><strong>Última Avaliação:</strong> 05/12/2024</p>
+            <p><strong>Status:</strong> Apto</p>
+            <p><strong>Observações:</strong> Sem restrições.</p>
+        </section>
+
+        <section id="graficos">
+            <h2>Dashboard de Desempenho</h2>
+            <canvas id="grafico-desempenho"></canvas>
+        </section>
+    </main>
+
+    <script>
+        // Gráfico de Desempenho
+        const ctx = document.getElementById('grafico-desempenho').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                datasets: [{
+                    label: 'Desempenho',
+                    data: [10, 20, 15, 30, 40, 35],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
