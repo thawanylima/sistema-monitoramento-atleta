@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-inicio">
+        <h1>Sistema de Monitoramento</h1>
+    </header>
+    <main>
+        <h2>Bem-vindo!</h2>
+        <div class="shortcuts">
+            <a href="cadastro.html" class="shortcut">Cadastro</a>
+            <a href="treino.html" class="shortcut">Treino</a>
+            <a href="painel-medico.html" class="shortcut">Painel Médico</a>
+        </div>
+        <section id="listagem">
+            <h2>Listagem de Atletas</h2>
+            <input type="text" placeholder="Buscar por Nome">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Posição</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exemplo de dados fixos -->
+                    <tr>
+                        <td><a href="perfil-joao.html">João Silva</a></td>
+                        <td>24</td>
+                        <td>Atacante</td>
+                        <td>Ativo</td>
+                        <td><button>Editar</button> <button>Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="perfil-maria.html">Maria Souza</a></td>
+                        <td>22</td>
+                        <td>Meio-campo</td>
+                        <td>Inativo</td>
+                        <td><button>Editar</button> <button>Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
