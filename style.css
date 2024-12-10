@@ -130,3 +130,11 @@ main section {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+.access-options {
+    margin-bottom: 15px;
+}
+
+.access-options label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
